@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio | Leo Marino</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#competencias" class="menu-link">Competências</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contatos" class="menu-link">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="img/marino foto perfil.jpg" alt="Foto de Leo Marino" class="foto-perfil">
+        <h1 class="h1">Leonardo Marino</h1>
+        <p class="cabecalho-subtitulo">Desenvolvedor Full Stack</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Olá! Me chamo Leonardo Marino. Entrei recentemente nessa área e gostei muito. Meu objetivo é ser um
+                Desenvolvedor Full Stack, e por isso estou desenvolvendo este portfólio para mostrar meus projetos
+                futuros, minhas principais competências e meus contatos.
+            </p>
+        </div>
+    </section>
+
+    <section id="competencias" class="competencias">
+        <h2 class="competencias-titulo">Minhas Competências</h2>
+        <div class="competencias-caixa">
+            <div class="competencias-card">
+                <img src="img/html 5.png" alt="HTML" class="competencias-imagem">
+                <img src="img/ccs.png" alt="CSS" class="competencias-imagem">
+                <img src="img/javascript.png" alt="JavaScript" class="competencias-imagem">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCCdLCDhY7mwKXP4bHVQ1SFZxn3pPM2QLFw&s" alt="Java" class="competencias-imagem">
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="https://seeklogo.com/images/P/palmeiras-futebol-clube-logo-C19D1122DB-seeklogo.com.png" alt="Palmeiras" class="projetos-imagem">
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Quiz sobre o palmeiras</h3>
+                    <p class="paragrafo-projetos">Um verdadeiro teste para um palmeirense de verdade!!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome" required>
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem" required></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+        </form>
+    </section>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault();
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5543996969040';
+
+            const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+            const msgFormatada = encodeURIComponent(texto);
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+
+</html>
