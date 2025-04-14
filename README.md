@@ -1,6 +1,6 @@
 # 💼 Portfolio | Leonardo Marino
 
-This is my personal portfolio developed with HTML, CSS, and JavaScript. Here you will find information about me, my skills, projects, and contact details.
+This is my personal portfolio developed with HTML, CSS . Here you will find information about me, my skills, projects, and contact details.
 
 ---
 
