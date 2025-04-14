@@ -10,12 +10,12 @@ html {
 }
 
 :root {
-    --primaria: #22c55e;         /* Verde principal */
-    --secundaria: #2563eb;       /* Azul complementar */
-    --escuro: #0f172a;           /* Fundo escuro */
-    --maisEscuro: #0b1120;       /* Fundo mais escuro */
-    --claro: #f1f5f9;            /* Texto claro */
-    --vidro: rgba(255, 255, 255, 0.08); /* efeito glass */
+    --primaria: #22c55e;         
+    --secundaria: #2563eb;       
+    --escuro: #0f172a;           
+    --maisEscuro: #0b1120;       
+    --claro: #f1f5f9;           
+    --vidro: rgba(255, 255, 255, 0.08);
 }
 
 body {
