@@ -1,95 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfólio | Leo Marino</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfólio | Leo Marino</title>
 </head>
-
 <body>
-    <div class="particulas"></div>
 
-    <nav class="navegacao">
-        <ul class="menu">
-            <li><a href="#inicio" class="menu-link">Início</a></li>
-            <li><a href="#sobre" class="menu-link">Sobre</a></li>
-            <li><a href="#competencias" class="menu-link">Competências</a></li>
-            <li><a href="#projetos" class="menu-link">Projetos</a></li>
-            <li><a href="#contatos" class="menu-link">Contato</a></li>
-        </ul>
-    </nav>
+  <!-- Partículas decorativas -->
+  <div class="particulas"></div>
 
-    <main id="inicio" class="cabecalho">
-        <img src="img/marino foto perfil.jpg" alt="Foto de Leo Marino" class="foto-perfil">
-        <h1 class="h1">Leonardo Marino</h1>
-        <p class="cabecalho-subtitulo">Desenvolvedor-Full-Stack</p>
-    </main>
+  <!-- Navegação -->
+  <nav class="navegacao">
+    <ul class="menu">
+      <li><a href="#inicio" class="menu-link">Início</a></li>
+      <li><a href="#sobre" class="menu-link">Sobre</a></li>
+      <li><a href="#competencias" class="menu-link">Competências</a></li>
+      <li><a href="#projetos" class="menu-link">Projetos</a></li>
+      <li><a href="#contatos" class="menu-link">Contato</a></li>
+    </ul>
+  </nav>
 
-    <section id="sobre" class="sobre">
-        <h2 class="sobre-titulo">Sobre Mim</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-paragrafo">
-                Olá! Me chamo Leonardo Marino. Entrei recentemente nessa área e gostei muito. Meu objetivo é ser um
-                Desenvolvedor Full Stack, e por isso estou desenvolvendo este portfólio para mostrar meus projetos
-                futuros, minhas principais competências e meus contatos.
-            </p>
+  <!-- Cabeçalho -->
+  <main id="inicio" class="cabecalho">
+    <img src="img/marino foto perfil.jpg" alt="Foto de perfil de Leonardo Marino" class="foto-perfil">
+    <h1 class="h1">Leonardo Marino</h1>
+    <p class="cabecalho-subtitulo">Desenvolvedor Full Stack</p>
+  </main>
+
+  <!-- Sobre mim -->
+  <section id="sobre" class="sobre">
+    <h2 class="sobre-titulo">Sobre Mim</h2>
+    <div class="sobre-caixa">
+      <p class="sobre-paragrafo">
+        Olá! Me chamo Leonardo Marino. Entrei recentemente nessa área e gostei muito. Meu objetivo é ser um
+        Desenvolvedor Full Stack, e por isso estou desenvolvendo este portfólio para mostrar meus projetos,
+        competências e contatos.
+      </p>
+    </div>
+  </section>
+
+  <!-- Competências -->
+  <section id="competencias" class="competencias">
+    <h2 class="competencias-titulo">Minhas Competências</h2>
+    <div class="competencias-caixa">
+      <div class="competencias-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Logo HTML5" class="competencias-imagem">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Logo CSS3" class="competencias-imagem">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Logo JavaScript" class="competencias-imagem">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Logo Java" class="competencias-imagem">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="projetos">
+    <h2 class="projetos-titulo">Meus Projetos</h2>
+    <div class="projetos-caixa">
+      <div class="projetos-card">
+        <img src="https://seeklogo.com/images/P/palmeiras-futebol-clube-logo-C19D1122DB-seeklogo.com.png" alt="Logo do Palmeiras" class="projetos-imagem">
+        <div class="caixa-texto-projeto">
+          <h3 class="info-projetos">Quiz sobre o Palmeiras</h3>
+          <p class="paragrafo-projetos">Um verdadeiro teste para um palmeirense de verdade!</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="competencias" class="competencias">
-        <h2 class="competencias-titulo">Minhas Competências</h2>
-        <div class="competencias-caixa">
-            <div class="competencias-card">
-                <img src="img/html 5.png" alt="HTML" class="competencias-imagem">
-                <img src="img/ccs.png" alt="CSS" class="competencias-imagem">
-                <img src="img/javascript.png" alt="JavaScript" class="competencias-imagem">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCCdLCDhY7mwKXP4bHVQ1SFZxn3pPM2QLFw&s" alt="Java" class="competencias-imagem">
-            </div>
-        </div>
-    </section>
+  <!-- Contato -->
+  <section id="contatos" class="contatos">
+    <h2 class="contatos-titulo">Entre em Contato</h2>
+    <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+      <div class="grupo-form">
+        <input placeholder="Nome" class="campo-form" id="nome" required>
+      </div>
+      <div class="grupo-form">
+        <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem" required></textarea>
+      </div>
+      <button type="submit" class="botao-form">Enviar WhatsApp</button>
+    </form>
+  </section>
 
-    <section id="projetos" class="projetos">
-        <h2 class="projetos-titulo">Meus Projetos</h2>
-        <div class="projetos-caixa">
-            <div class="projetos-card">
-                <img src="https://seeklogo.com/images/P/palmeiras-futebol-clube-logo-C19D1122DB-seeklogo.com.png" alt="Palmeiras" class="projetos-imagem">
-                <div class="caixa-texto-projeto">
-                    <h3 class="info-projetos">Quiz sobre o palmeiras</h3>
-                    <p class="paragrafo-projetos">Um verdadeiro teste para um palmeirense de verdade!!</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>&copy; 2025 Leonardo Marino. Todos os direitos reservados.</p>
+  </footer>
 
-    <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">Entre em Contato</h2>
-        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
-            <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form" id="nome" required>
-            </div>
-            <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem" required></textarea>
-            </div>
-            <button type="submit" class="botao-form">Enviar WhatsApp</button>
-        </form>
-    </section>
-
-    <script>
-        function enviarWhats(event) {
-            event.preventDefault();
-            const nome = document.getElementById('nome').value;
-            const mensagem = document.getElementById('mensagem').value;
-            const telefone = '5543996969040';
-
-            const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
-            const msgFormatada = encodeURIComponent(texto);
-
-            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
-            window.open(url, '_blank');
-        }
+  <!-- Script WhatsApp -->
+  <script>
+    function enviarWhats(event) {
+      event.preventDefault();
+      const nome = document.getElementById('nome').value.trim();
+      const mensagem = document.getElementById('mensagem').value.trim();
+      const telefone = '5543996969040';
+      const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+      const url = `https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".projetos-card");
+    
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.animationPlayState = "running";
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+    
+        cards.forEach(card => {
+            card.style.animationPlayState = "paused";
+            observer.observe(card);
+        });
+    });
     </script>
-</body>
+    
 
+</body>
 </html>
