@@ -44,8 +44,7 @@ If you want to chat or get in touch for opportunities, feedback, or collaboratio
 
 ## 🚀 View Online
 
-> Coming soon via GitHub Pages or Vercel!  
-> *(or place the URL here if already published)*
+https://marinoleo96351.github.io/Portif-lio-LeoMarino/
 
 ---
 
