@@ -26,6 +26,9 @@ Hello! My name is **Leonardo Marino**, and I am a developer in training with a p
 ### 🧠 Quiz about Palmeiras
 A trivia game with 60 questions about the Sociedade Esportiva Palmeiras.
 
+###  🎈 Special invitation 
+It is an invitation to a special person in your life, and can be adapted to the taste of whoever is using it.
+
 ---
 
 ## 📱 Contact
@@ -52,8 +55,3 @@ https://marinoleo96351.github.io/Portif-lio-LeoMarino/
 
 📍 In development – New projects and improvements coming soon!
 
----
-
-## 📄 License
-
-This project is for personal use and is under the MIT License. Feel free to get inspired, but please keep the credits 😉.
