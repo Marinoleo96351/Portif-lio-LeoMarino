@@ -306,7 +306,7 @@ a:focus, button:focus, input:focus, textarea:focus {
     }
 }
 
-/*mobile width
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
